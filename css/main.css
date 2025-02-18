@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#scores{
+  color: blue;
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: center;
+  font-size: larger;
+  z-index: 100;
+}
+body{
+  background: #c4baff;
+}
+
+.logo{
+  text-align: center;
+}
+
+#game{
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom ,#c4baff , #ffffff);
+}
+
+#player{
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  transition: 0.5s;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
+#block{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: -100px;
+  left: 100px;
+  animation: moveDown 2.5s linear infinite;
+}
+
+@keyframes moveDown{
+  0%{
+    top: -100%;
+  }
+  100%{
+    top: 100%;
+  }
+}
